@@ -1,0 +1,74 @@
+/* Estilo para el último elemento .flexContainer */
+.flexContainer:last-child {
+    margin-top: 2em; /* Se agrega un margen superior de 2em al último elemento .flexContainer */
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    margin: 0; /* Se establece el margen del cuerpo del documento a 0 */
+    padding: 0; /* Se establece el relleno del cuerpo del documento a 0 */
+}
+
+/* Estilos generales para los elementos div */
+div {
+    height: 50px; /* Se establece la altura de los elementos div a 50px */
+    width: 50px; /* Se establece el ancho de los elementos div a 50px */
+}
+
+/* Estilos para el primer elemento div */
+div:nth-child(1) {
+    background-color: red; /* Se establece el color de fondo del primer elemento div a rojo */
+    width: 50px; /* Se establece el ancho del primer elemento div a 50px */
+    height: 50px; /* Se establece la altura del primer elemento div a 50px */
+}
+
+/* Estilos para el segundo elemento div */
+div:nth-child(2) {
+    background-color: blue; /* Se establece el color de fondo del segundo elemento div a azul */
+}
+
+/* Estilos para el tercer elemento div */
+div:nth-child(3) {
+    background-color: green; /* Se establece el color de fondo del tercer elemento div a verde */
+}
+
+/* Estilos para el cuarto elemento div */
+div:nth-child(4) {
+    background-color: yellow; /* Se establece el color de fondo del cuarto elemento div a amarillo */
+}
+
+/* Estilos para el quinto elemento div */
+div:nth-child(5) {
+    background-color: pink; /* Se establece el color de fondo del quinto elemento div a rosa */
+}
+
+/* Estilos para el sexto elemento div */
+div:nth-child(6) {
+    background-color: black; /* Se establece el color de fondo del sexto elemento div a negro */
+}
+
+/* Estilos para el séptimo elemento div */
+div:nth-child(7) {
+    background-color: orange; /* Se establece el color de fondo del séptimo elemento div a naranja */
+}
+
+/* Estilos para el octavo elemento div */
+div:nth-child(8) {
+    background-color: silver; /* Se establece el color de fondo del octavo elemento div a plateado */
+}
+
+/* Estilos para el contenedor .flexContainer */
+.flexContainer {
+    display: flex; /* Se convierte en un contenedor flexible */
+}
+
+/* Estilos para los elementos .flexItem */
+.flexItem {
+    flex: 0 1 200px; /* Se establece la propiedad flex a 0 1 200px, lo que significa que el elemento no crecerá ni se encogerá, y tendrá un ancho inicial de 200px */
+}
+
+/* Estilos para el elemento con la clase .primero */
+.primero {
+    /*flex-grow: 3;*/ /* Comentario */
+    /*flex-shrink: 2;*/ /* Comentario */
+}
