@@ -1,88 +1,113 @@
+/* Estilo para el contenedor principal del encabezado */
 .headerPrincipal .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    display: flex; /* Se convierte en un contenedor flexible */
+    align-items: center; /* Se alinean los elementos verticalmente en el centro */
+    justify-content: space-between; /* Se distribuye el espacio sobrante horizontalmente entre los elementos secundarios */
 }
 
+/* Estilo para el elemento de navegación del encabezado */
 .headerPrincipal-nav {
-    display: flex;
+    display: flex; /* Se convierte en un contenedor flexible */
 }
 
+/* Estilo para el contenedor principal del pie de página de patrocinadores */
 .rodapePrincipal-patrocinadores .container {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Se convierte en un contenedor flexible */
+    justify-content: space-between; /* Se distribuye el espacio sobrante horizontalmente entre los elementos secundarios */
 }
 
+/* Estilo para la lista de patrocinadores del pie de página */
 .rodapePrincipal-patrocinadores-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    margin-right: 5%;
+    display: flex; /* Se convierte en un contenedor flexible */
+    align-items: center; /* Se alinean los elementos verticalmente en el centro */
+    justify-content: space-around; /* Se distribuye el espacio sobrante horizontalmente alrededor de los elementos secundarios */
+    width: 70%; /* Se establece un ancho del 70% */
+    margin-right: 5%; /* Se establece un margen derecho del 5% */
 }
 
+/* Estilo para el formulario de contacto del pie de página */
 .rodapePrincipal-contatoForm {
-    width: 25%;
+    width: 25%; /* Se establece un ancho del 25% */
 }
 
+/* Estilo para el fieldset del formulario de contacto del pie de página */
 .rodapePrincipal-contatoForm-fieldset {
-    display: flex;
+    display: flex; /* Se convierte en un contenedor flexible */
 }
 
+/* Estilo para la lista de navegación del mapa del pie de página */
 .rodapePrincipal-navMap-list {
-    display: flex;
-    flex-direction: row;
-    height: 250%;
-    flex-wrap: wrap;
+    display: flex; /* Se convierte en un contenedor flexible */
+    flex-direction: row; /* Se establece la dirección horizontal de los elementos secundarios */
+    height: 250%; /* Se establece una altura del 250% */
+    flex-wrap: wrap; /* Los elementos secundarios se envuelven a la siguiente línea si no caben en el contenedor */
 }
 
+/* Estilo para el contenedor principal de los cursos */
 .contenidoPrincipal-cursos {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Se convierte en un contenedor flexible */
+    flex-wrap: wrap; /* Los elementos secundarios se envuelven a la siguiente línea si no caben en el contenedor */
 }
 
+/* Estilo para los enlaces de los cursos */
 .contenidoPrincipal-cursos-link {
-    display: flex;
-    width:23% ;
-}
-.videoSobre .container{
-    display: flex;
+    display: flex; /* Se convierte en un contenedor flexible */
+    width: 23%; /* Se establece un ancho del 23% */
 }
 
-/*Responsive: esta sera la version mobile*/
-
-.headerPrincipal .container {
-    flex-direction: column;
+/* Estilo para el contenedor principal del video de presentación */
+.videoSobre .container {
+    display: flex; /* Se convierte en un contenedor flexible */
 }
 
-.headerPrincipal-nav{
-    flex-direction: column;
-}
+/* Estilos responsivos para la versión móvil (ancho de pantalla <= 768px) */
+@media (max-width: 768px) {
 
-.contenidoPrincipal-cursos {
-    flex-direction: column;
-}
+    /* Modificación del contenedor principal del encabezado */
+    .headerPrincipal .container {
+        flex-direction: column; /* Se cambia la dirección de los elementos a columna */
+    }
 
-.contenidoPrincipal-cursos-link {
-    width:100% ;
-}
+    /* Modificación del elemento de navegación del encabezado */
+    .headerPrincipal-nav {
+        flex-direction: column; /* Se cambia la dirección de los elementos a columna */
+    }
 
-.rodapePrincipal-navMap-list {
-    height: auto;
-    flex-wrap: nowrap;
-}
+    /* Modificación del contenedor principal de los cursos */
+    .contenidoPrincipal-cursos {
+        flex-direction: column; /* Se cambia la dirección de los elementos a columna */
+    }
 
-.rodapePrincipal-patrocinadores .container {
-    flex-direction: column;
-}
+    /* Modificación de los enlaces de los cursos */
+    .contenidoPrincipal-cursos-link {
+        width: 100%; /* Se establece un ancho del 100% para que ocupen toda la columna */
+    }
 
-.rodapePrincipal-contatoForm {
-    width: 100%;
-}
+    /* Modificación de la lista de navegación del mapa del pie de página */
+    .rodapePrincipal-navMap-list {
+        height: auto; /* Se establece una altura automática */
+        flex-wrap: nowrap; /* Los elementos secundarios no se envuelven y permanecen en una sola línea */
+    }
 
-.rodapePrincipal-patrocinadores-list {
-    align-items: initial;
-    width: 100%;
-    margin: 0%;
+    /* Modificación del contenedor principal del pie de página de patrocinadores */
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column; /* Se cambia la dirección de los elementos a columna */
+    }
+
+    /* Modificación del formulario de contacto del pie de página */
+    .rodapePrincipal-contatoForm {
+        width: 100%; /* Se establece un ancho del 100% para ocupar toda la columna */
+    }
+
+    /* Modificación de la lista de patrocinadores del pie de página */
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center; /* Se alinean los elementos verticalmente en el centro */
+        width: 100%; /* Se establece un ancho del 100% para ocupar toda la columna */
+        margin: 0%; /* Se establece un margen del 0% */
+    }
+
+    /* Modificación del fieldset del formulario de contacto del pie de página */
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center; /* Se centra horizontalmente los elementos secundarios */
+    }
 }
